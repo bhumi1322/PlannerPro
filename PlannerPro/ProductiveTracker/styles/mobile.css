@@ -1,0 +1,588 @@
+/* Mobile-First Responsive Design */
+
+/* Base mobile styles (320px and up) */
+@media (max-width: 768px) {
+    /* Header adjustments */
+    .header-content {
+        padding: 1rem;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: stretch;
+    }
+    
+    .logo {
+        justify-content: center;
+        font-size: 1.125rem;
+    }
+    
+    .nav-tabs {
+        order: 2;
+        justify-content: center;
+    }
+    
+    .nav-tab {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+        flex: 1;
+        justify-content: center;
+    }
+    
+    .nav-tab i {
+        width: 16px;
+        height: 16px;
+    }
+    
+    .header-actions {
+        order: 1;
+        justify-content: space-between;
+        width: 100%;
+    }
+    
+    .header-actions .btn-primary {
+        padding: 0.5rem 1rem;
+        font-size: 0.875rem;
+    }
+    
+    /* Main content */
+    .main {
+        padding: 1rem;
+    }
+    
+    /* Calendar mobile layout */
+    .calendar-header {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .calendar-nav h2 {
+        min-width: auto;
+        font-size: 1.5rem;
+    }
+    
+    .calendar-actions {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .view-toggle {
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .view-btn {
+        flex: 1;
+        text-align: center;
+    }
+    
+    /* Calendar grid mobile */
+    .calendar-container {
+        border-radius: var(--radius-lg);
+    }
+    
+    .calendar-day {
+        min-height: 80px;
+        padding: 0.5rem;
+    }
+    
+    .calendar-day-content {
+        max-height: 60px;
+        font-size: 0.75rem;
+    }
+    
+    .task-preview {
+        padding: 0.125rem 0.25rem;
+        font-size: 0.625rem;
+        border-radius: var(--radius-sm);
+    }
+    
+    .weekday {
+        padding: 0.5rem;
+        font-size: 0.75rem;
+    }
+    
+    /* Tasks mobile layout */
+    .tasks-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .tasks-filters {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+    
+    .search-box input {
+        width: 100%;
+    }
+    
+    .tasks-filters select {
+        width: 100%;
+    }
+    
+    .tasks-content {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .tasks-sidebar {
+        order: 2;
+        padding: 1rem;
+    }
+    
+    .tasks-main {
+        order: 1;
+    }
+    
+    .task-item {
+        padding: 1rem;
+    }
+    
+    .task-header {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    
+    .task-actions {
+        opacity: 1;
+        align-self: flex-end;
+    }
+    
+    .task-meta {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.75rem;
+    }
+    
+    .task-info {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    
+    .task-tags {
+        justify-content: flex-start;
+    }
+    
+    /* Stats mobile layout */
+    .stats-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .stats-period {
+        align-self: center;
+        width: 100%;
+        max-width: 300px;
+    }
+    
+    .period-btn {
+        flex: 1;
+        text-align: center;
+    }
+    
+    .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-card {
+        padding: 1rem;
+    }
+    
+    .stat-card-content {
+        height: 200px;
+    }
+    
+    .detailed-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .stat-section {
+        padding: 1rem;
+    }
+    
+    .achievements {
+        grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+        gap: 0.75rem;
+    }
+    
+    .achievement-badge {
+        padding: 0.75rem;
+    }
+    
+    /* Modal mobile adjustments */
+    .modal {
+        width: 95%;
+        margin: 1rem;
+        max-height: calc(100vh - 2rem);
+    }
+    
+    .modal-header {
+        padding: 1rem 1rem 0.75rem;
+    }
+    
+    .modal-content {
+        padding: 1rem;
+    }
+    
+    .modal-actions {
+        flex-direction: column-reverse;
+        gap: 0.75rem;
+    }
+    
+    .modal-actions button {
+        width: 100%;
+        justify-content: center;
+    }
+    
+    /* Form mobile adjustments */
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+    
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    /* Settings mobile */
+    .setting-item {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.5rem;
+    }
+    
+    .setting-item input,
+    .setting-item select {
+        max-width: none;
+    }
+    
+    .setting-buttons {
+        flex-direction: column;
+    }
+    
+    /* Notification mobile */
+    .notification-container {
+        top: auto;
+        bottom: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    
+    .notification {
+        min-width: auto;
+        width: 100%;
+    }
+    
+    /* Category list mobile */
+    .category-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+    
+    .category-item {
+        padding: 0.5rem 0.75rem;
+    }
+    
+    /* Quick stats mobile */
+    .quick-stats {
+        margin-top: 1rem;
+        padding-top: 1rem;
+    }
+    
+    .stat-item {
+        margin-bottom: 0.5rem;
+        font-size: 0.875rem;
+    }
+}
+
+/* Small mobile devices (320px - 480px) */
+@media (max-width: 480px) {
+    .main {
+        padding: 0.75rem;
+    }
+    
+    .calendar-day {
+        min-height: 60px;
+        padding: 0.25rem;
+    }
+    
+    .calendar-day-content {
+        max-height: 40px;
+    }
+    
+    .task-preview {
+        display: none; /* Hide task previews on very small screens */
+    }
+    
+    .calendar-day.has-tasks .day-indicator {
+        display: block; /* Show indicator instead */
+    }
+    
+    .nav-tab {
+        padding: 0.5rem 0.75rem;
+        font-size: 0.75rem;
+    }
+    
+    .nav-tab span {
+        display: none; /* Hide text, show only icons */
+    }
+    
+    .logo h1 {
+        font-size: 1rem;
+    }
+    
+    .task-item {
+        padding: 0.75rem;
+    }
+    
+    .task-title {
+        font-size: 1rem;
+    }
+    
+    .stat-card {
+        padding: 0.75rem;
+    }
+    
+    .stat-card-content {
+        height: 150px;
+    }
+}
+
+/* Landscape orientation adjustments */
+@media (max-width: 768px) and (orientation: landscape) {
+    .header-content {
+        flex-direction: row;
+        padding: 0.75rem 1rem;
+    }
+    
+    .nav-tabs {
+        order: 0;
+    }
+    
+    .header-actions {
+        order: 2;
+        width: auto;
+    }
+    
+    .calendar-day {
+        min-height: 70px;
+    }
+    
+    .tasks-content {
+        grid-template-columns: 250px 1fr;
+    }
+    
+    .tasks-sidebar {
+        order: 1;
+    }
+    
+    .tasks-main {
+        order: 2;
+    }
+}
+
+/* Touch-friendly improvements */
+@media (hover: none) and (pointer: coarse) {
+    .btn-icon {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    .task-actions {
+        opacity: 1;
+    }
+    
+    .task-checkbox {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .nav-tab {
+        min-height: 44px;
+    }
+    
+    .calendar-day {
+        cursor: default;
+    }
+    
+    .task-item:hover {
+        transform: none;
+    }
+    
+    .btn-primary:hover,
+    .btn-secondary:hover,
+    .btn-danger:hover {
+        transform: none;
+    }
+}
+
+/* High DPI mobile screens */
+@media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+    .calendar-day {
+        border-width: 0.5px;
+    }
+    
+    .task-item {
+        border-width: 0.5px;
+    }
+    
+    .modal {
+        border-width: 0.5px;
+    }
+}
+
+/* Collapsible calendar for very small screens */
+@media (max-width: 480px) {
+    .calendar-container.collapsed {
+        height: 200px;
+        overflow-y: auto;
+    }
+    
+    .calendar-collapse-btn {
+        display: block;
+        width: 100%;
+        padding: 0.75rem;
+        background-color: var(--bg-secondary);
+        border-top: 1px solid var(--border-color);
+        color: var(--text-secondary);
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    .calendar-collapse-btn:hover {
+        background-color: var(--bg-tertiary);
+        color: var(--text-primary);
+    }
+}
+
+/* Mobile-specific animations */
+@media (max-width: 768px) {
+    .view-section.active {
+        animation: mobileSlideIn 0.3s ease;
+    }
+    
+    @keyframes mobileSlideIn {
+        from {
+            opacity: 0;
+            transform: translateX(20px);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+    
+    .task-item {
+        transition: all 0.2s ease;
+    }
+    
+    .modal {
+        animation: mobileModalIn 0.3s ease;
+    }
+    
+    @keyframes mobileModalIn {
+        from {
+            opacity: 0;
+            transform: translateY(100px) scale(0.95);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0) scale(1);
+        }
+    }
+}
+
+/* Mobile dark mode adjustments */
+@media (max-width: 768px) {
+    [data-theme="dark"] .calendar-day {
+        border-color: var(--border-color);
+    }
+    
+    [data-theme="dark"] .task-item {
+        background-color: var(--bg-secondary);
+    }
+    
+    [data-theme="dark"] .modal {
+        background-color: var(--bg-primary);
+    }
+}
+
+/* Safe area adjustments for modern mobile devices */
+@supports (padding: max(0px)) {
+    @media (max-width: 768px) {
+        .header {
+            padding-top: env(safe-area-inset-top);
+        }
+        
+        .main {
+            padding-bottom: max(1rem, env(safe-area-inset-bottom));
+        }
+        
+        .notification-container {
+            bottom: max(1rem, env(safe-area-inset-bottom));
+            left: max(1rem, env(safe-area-inset-left));
+            right: max(1rem, env(safe-area-inset-right));
+        }
+    }
+}
+
+/* Mobile accessibility improvements */
+@media (max-width: 768px) {
+    /* Larger tap targets */
+    button, .btn-icon, .task-checkbox, .nav-tab {
+        min-width: 44px;
+        min-height: 44px;
+    }
+    
+    /* Better focus indicators */
+    *:focus-visible {
+        outline: 3px solid var(--primary-color);
+        outline-offset: 3px;
+    }
+    
+    /* Improved text sizing */
+    .task-description,
+    .notification-message,
+    .stat-item {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+}
+
+/* Mobile drag and drop adjustments */
+@media (max-width: 768px) {
+    .task-item.dragging {
+        transform: scale(1.05) rotate(2deg);
+    }
+    
+    .drop-zone {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .drag-preview {
+        max-width: 250px;
+    }
+}
+
+/* Reduced motion for mobile */
+@media (max-width: 768px) and (prefers-reduced-motion: reduce) {
+    .view-section.active {
+        animation: none;
+    }
+    
+    .modal {
+        animation: none;
+    }
+    
+    .task-item:hover {
+        transform: none;
+    }
+}
